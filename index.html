@@ -14,9 +14,9 @@
       <button type="submit">Send</button>
     </form>
   </div>
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://chatter-ioha.onrender.com/socket.io/socket.io.js"></script>
   <script>
-    const socket = io();
+    const socket = io("https://chatter-ioha.onrender.com");
 
     // Display previous messages
     socket.on('previousMessages', (messages) => {
